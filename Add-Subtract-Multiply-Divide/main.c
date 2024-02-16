@@ -7,7 +7,7 @@ int getInput();
 int main(){
     char operation[20];
     
-    printf("Do you want to Add, Subtract, Multiply, or Divide? ");
+    printf("Do you want to Add, Subtract, Multiply, or Divide? Or type Exit to terminate: ");
     scanf("%s", operation);
 
     if(strcmp(operation, "Add") == 0){
@@ -28,6 +28,7 @@ int main(){
     else if(strcmp(operation, "Divide") == 0){
         getInput();
         printf("The result is: %d\n", a/b);
+    } else if(strcmp(operation, "Exit") == 0){
     } else {
         printf("You did not input a valid operation. Terminating program\n");
     }
@@ -42,6 +43,6 @@ int getInput(){
 
     printf("Please input the second number: \n");
     scanf("%d", &b);
-    
+
     return(a, b);
 }
