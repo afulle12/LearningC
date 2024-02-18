@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 //#include <string.h>
+//Sources:
+//https://en.cppreference.com/w/c/numeric/random/srand (helped me get random numbers working)
 
 int getInput();
 int calculator();
@@ -35,7 +37,7 @@ int getInput(){
     return(a);
 }
 
-int calculator( a ){
+int calculator(int a){
     srand(time(NULL));
     int pc = (rand() % 3) + 1;
     printf("PC = %d\n", pc);
