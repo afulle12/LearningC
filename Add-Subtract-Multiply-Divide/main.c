@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int a, b;
+double a, b;
 int getInput();
 
 int main(){
@@ -12,22 +12,22 @@ int main(){
 
     if(strcmp(operation, "Add") == 0){
         getInput();
-        printf("The result is %d\n", a+b);
+        printf("The result is %f\n", a+b);
     }
 
     else if(strcmp(operation, "Subtract") == 0){
         getInput();
-        printf("The result is: %d\n", a-b);
+        printf("The result is: %f\n", a-b);
     }
 
     else if(strcmp(operation, "Multiply") == 0){
         getInput();
-        printf("The result is: %d\n", a*b);
+        printf("The result is: %f\n", a*b);
     }
 
     else if(strcmp(operation, "Divide") == 0){
         getInput();
-        printf("The result is: %d\n", a/b);
+        printf("The result is: %f\n", a/b);
     } else if(strcmp(operation, "Exit") == 0){
     } else {
         printf("You did not input a valid operation. Terminating program\n");
@@ -39,10 +39,10 @@ int main(){
 
 int getInput(){
     printf("Please input the first number: \n");
-    scanf("%d", &a);
+    scanf("%f", &a);
 
     printf("Please input the second number: \n");
-    scanf("%d", &b);
+    scanf("%f", &b);
 
     return(a, b);
 }
